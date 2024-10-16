@@ -31,7 +31,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   BannerAd bAd = new BannerAd(
       size: AdSize.banner,
-      adUnitId: 'ca-app-pub-3940256099942544/9214589741',
+      adUnitId: 'ca-app-pub-1277658302369683/6043045696',
       listener: BannerAdListener(
         onAdLoaded: (Ad ad) {
           print('Ad Loaded');
@@ -53,6 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ad: bAd..load(),
           key: UniqueKey(),
         ),
+        height: 50,
       ),
     );
   }
